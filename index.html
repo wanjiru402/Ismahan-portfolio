@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ismahan Wanjiru | Portfolio</title>
+
+    <!-- Connect the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connect the external JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <header class="navbar">
+        <a href="#home" class="logo">Ismahan Wanjiru</a>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section: introduction and photo -->
+        <section class="hero section-container" id="home">
+
+            <div class="hero-text">
+                <span class="eyebrow">
+                    SOFTWARE ENGINEERING STUDENT
+                </span>
+
+                <h1>Hello, I'm<br>Ismahan Wanjiru.</h1>
+
+                <p>
+                    I'm learning to build useful, thoughtful websites
+                    through HTML, CSS and hands-on projects.
+                </p>
+
+                <a href="#projects" class="button">
+                    Explore my work <span>→</span>
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="ismahan.jpg"
+                    alt="Portrait of Ismahan Wanjiru"
+                >
+            </div>
+
+        </section>
+
+        <!-- About section -->
+        <section class="about section-container" id="about">
+
+            <div class="about-text">
+                <h2>About Me</h2>
+
+                <p>
+                    My name is Ismahan Wanjiru, and I am a Software
+                    Engineering student with an interest in web
+                    development and technology. I'm currently learning
+                    HTML, CSS and the fundamentals of building websites.
+                    I enjoy learning new skills, solving problems, and
+                    improving my abilities through practical projects.
+                    My goal is to become a skilled developer and create
+                    useful, user-friendly websites.I am also a self taught 
+                    makeup artist with three years of experience. 
+                </p>
+            </div>
+
+            <div class="quote-card">
+                <span class="laptop-icon">⌨️</span>
+                <p>Small steps<br>make big progress.</p>
+                <span class="quote-line"></span>
+            </div>
+
+        </section>
+
+        <!-- Skills section -->
+        <section class="skills section-container" id="skills">
+            <h2>My Skills</h2>
+
+            <p class="section-description">
+                These are the skills I have learned or am currently developing:
+            </p>
+
+            <div class="skill-list">
+                <span>HTML</span>
+                <span>Semantic HTML</span>
+                <span>Navigation &amp; Links</span>
+                <span>CSS (Learning)</span>
+                <span>Problem Solving</span>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section class="projects section-container" id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-icon">▣</div>
+
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+                        A personal website designed to introduce me,
+                        display my skills, showcase my projects and
+                        provide contact information. This project helps
+                        me practise HTML structure and navigation links.
+                    </p>
+
+                    <a href="#home" class="project-link">
+                        View project <span>→</span>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">♙</div>
+
+                    <h3>HTML Profile Page</h3>
+
+                    <p>
+                        A simple webpage introducing a person using
+                        headings, paragraphs, lists and an image.
+                        This project helps me practise the basic
+                        elements of HTML.
+                    </p>
+
+                    <a href="#about" class="project-link">
+                        View project <span>→</span>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">↗️</div>
+
+                    <h3>Webpage with Navigation Links</h3>
+
+                    <p>
+                        A basic webpage with links that help visitors
+                        move between different sections. This project
+                        helps me understand anchor tags, hyperlinks
+                        and page navigation.
+                    </p>
+
+                    <a href="#skills" class="project-link">
+                        View project <span>→</span>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact" id="contact">
+            <div class="contact-inner section-container">
+
+                <div class="contact-info">
+                    <h2>Let's connect</h2>
+
+                    <p>
+                        I'd love to hear from you. Feel free to reach out
+                        using the details below or send me a message.
+                    </p>
+
+                    <a href="mailto:aydeenwanjiru@gmail.com">
+                        <span class="contact-icon">✉️</span>
+                        wanjiruismahan04@gmail.com
+                    </a>
+
+                    <a href="tel:+254794166888">
+                        <span>TEL;</span>
+                        +254794166888
+                    </a>
+
+                    <a href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer">
+                        <span class="contact-icon">●</span>
+                        Visit my GitHub
+                    </a>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ismahan-wanjiru" target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">in</a>
+
+                        <a href="https://github.com/mahany402" target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">●</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="button send-button">
+                        Send Message
+                    </button>
+
+                    <p id="formStatus" class="form-status"
+                       aria-live="polite"></p>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            © <span id="year">2026</span> Ismahan Wanjiru.
+            All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

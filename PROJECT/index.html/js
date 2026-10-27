@@ -1,0 +1,45 @@
+/* 1. Update the copyright year */
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+
+/* 2. Highlight the navigation link for the current section */
+const sections = document.querySelectorAll("main section[id]");
+const navLinks = document.querySelectorAll(".navbar nav a");
+
+function updateNavigation() {
+    let currentSection = "home";
+
+    sections.forEach(function (section) {
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop <= 150) {
+            currentSection = section.id;
+        }
+    });
+
+    navLinks.forEach(function (link) {
+        const isActive =
+            link.getAttribute("href") === "#" + currentSection;
+
+        link.classList.toggle("active", isActive);
+    });
+}
+
+window.addEventListener("scroll", updateNavigation);
+updateNavigation();
+
+/* 3. Handle the contact form */
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    formStatus.textContent =
+        "Thank you! The form works, but messages are not being sent yet.";
+
+    contactForm.reset();
+});
